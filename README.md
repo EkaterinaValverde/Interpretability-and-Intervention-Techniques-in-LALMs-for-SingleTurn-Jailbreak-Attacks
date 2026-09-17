@@ -58,3 +58,42 @@ The corpus includes three attack groups:
 ├── figures/
 ├── requirements.txt
 └── README.md
+
+## Installation
+Clone the repository and install the required dependencies:
+
+git clone YOUR_REPOSITORY_URL
+cd YOUR_REPOSITORY_NAME
+pip install -r requirements.txt
+
+## Usage
+The main experimental pipeline consists of:
+1. Preparing the dataset
+2. Generating the audio files
+3. Extracting model activations
+4. Training the linear probes
+5. Evaluating the probing results
+6. Performing activation steering
+See the corresponding scripts and notebooks for the implementation details.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
