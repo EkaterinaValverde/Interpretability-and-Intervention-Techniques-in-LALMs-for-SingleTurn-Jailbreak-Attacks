@@ -47,9 +47,6 @@ The corpus includes three attack groups:
 - DNA
 - PAIR
 
-Role-play examples from the source dataset were excluded because they did not
-fit the single-turn experimental design.
-
 ## Repository structure
 
 ```text
