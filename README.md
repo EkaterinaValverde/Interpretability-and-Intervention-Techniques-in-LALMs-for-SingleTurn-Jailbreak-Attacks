@@ -60,11 +60,9 @@ experimental pipeline: dataset construction, audio generation, activation
 extraction, analysis, and activation steering.
 
 ## Installation
-Clone the repository and install the required dependencies:
+Install the required Python dependencies with:
 
 ```text
-git clone YOUR_REPOSITORY_URL
-cd YOUR_REPOSITORY_NAME
 pip install -r requirements.txt
 ```
 
