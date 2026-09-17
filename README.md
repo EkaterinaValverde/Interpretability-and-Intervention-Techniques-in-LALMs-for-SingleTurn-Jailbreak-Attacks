@@ -39,42 +39,84 @@ The experiments were conducted on three open-weight Large Audio-Language Models:
 ## Dataset
 
 The final dataset contains 200 baseline--attacked pairs, corresponding to
-400 audio files.
+400 audio inputs. It includes three attack strategies: GCG, DNA, and PAIR.
 
-The corpus includes three attack groups:
-
-- GCG
-- DNA
-- PAIR
+The audio corpus was generated from the corresponding textual records using
+a fixed text-to-speech configuration.
 
 ## Repository structure
 
 ```text
 .
 ├── data/
-├── notebooks/
-├── src/
+├── scripts/
 ├── results/
-├── figures/
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .gitignore
+````
+The scripts/ directory is organised according to the main stages of the
+experimental pipeline: dataset construction, audio generation, activation
+extraction, analysis, and activation steering.
 
 ## Installation
 Clone the repository and install the required dependencies:
 
+```text
 git clone YOUR_REPOSITORY_URL
 cd YOUR_REPOSITORY_NAME
 pip install -r requirements.txt
+```
 
 ## Usage
 The main experimental pipeline consists of:
+
 1. Preparing the dataset
 2. Generating the audio files
 3. Extracting model activations
 4. Training the linear probes
 5. Evaluating the probing results
 6. Performing activation steering
+   
 See the corresponding scripts and notebooks for the implementation details.
+
+## Results
+
+The experiments investigate two main questions:
+- Can the model distinguish clean and attacked inputs from its internal
+representations?
+- Can the model's obey/reject behaviour be recovered from its internal
+representations?
+
+The repository also contains the code used to perform activation steering and
+analyse its effect on refusal behaviour.
+
+## Reproducibility
+
+The experiments use fixed random seeds where applicable. The audio corpus is
+generated from the stored textual records using a fixed text-to-speech
+configuration.
+
+## Thesis
+This repository accompanies the Bachelor's Thesis:
+**Interpretability-and-Intervention-Techniques-in-LALMs-for-SingleTurn-Jailbreak-Attacks**
+Ekaterina Valverde Bilenko -- Universidad Carlos III de Madrid, 2026 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
